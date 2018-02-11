@@ -1,0 +1,18 @@
+@import './../vars';
+
+.bottomBar {
+  display: flex;
+  padding: 24px 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+
+  & > * + * {
+    margin-right: 12px;
+  }
+}
+
+.fileIconButton {
+  background-color: #fafafa;
+  margin-right: 12px;
+}

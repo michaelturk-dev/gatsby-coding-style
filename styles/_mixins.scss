@@ -1,0 +1,32 @@
+@use 'vars';
+@mixin font-medium-bold {
+  font-family: vars.$font-sans-serif;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+@mixin font-medium {
+  font-family: vars.$font-sans-serif;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+@mixin breakpoint-up($name) {
+  @media (min-width: map-get(vars.$grid-breakpoints, $name)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($name) {
+  @media (max-width: map-get(vars.$grid-breakpoints, $name)) {
+    @content;
+  }
+}
+
+@mixin icon-right-padding {
+  padding-right: 0.75rem;
+}

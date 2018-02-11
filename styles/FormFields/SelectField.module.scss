@@ -1,0 +1,89 @@
+@use '../vars';
+
+.selectContainer {
+  display: flex;
+  align-items: center;
+  font-weight: vars.$font-medium;
+  font-size: .9rem;
+}
+
+.selectFieldLabel {
+  padding-right: .5em;
+}
+
+.selectField {
+  background-color: vars.$white;
+  cursor: pointer;
+  border: 1px solid vars.$white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: .5em 2em .5em .5em;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' style='transform: rotate(180deg);'><path fill='currentColor' d='M3.836 -1.5L2.5 -0.203 6.828 4 2.5 8.203 3.836 9.5 9.5 4z' transform='matrix(0 -1 -1 0 10 10)'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+
+  &:hover,
+  &:focus {
+    border: 1px solid vars.$hoverColor;
+  }
+}
+
+.buttonLabelGroup {
+  display: flex;
+  align-items: center;
+
+  .selectFieldAsButton {
+    font-weight: vars.$font-medium;
+
+
+    .button {
+      width: 100%;
+      background-color: vars.$white;
+      cursor: pointer;
+      border: 1px solid vars.$white;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      padding: .5em 2em .5em .5em;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' style='transform: rotate(180deg);'><path fill='currentColor' d='M3.836 -1.5L2.5 -0.203 6.828 4 2.5 8.203 3.836 9.5 9.5 4z' transform='matrix(0 -1 -1 0 10 10)'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 95%;
+      background-position-y: 50%;
+      text-align: left;
+      position: relative;
+
+      &:hover,
+      &:focus {
+        border: 1px solid vars.$hoverColor;
+        outline-color: vars.$hoverColor;
+        outline-width: 1px;
+      }
+    }
+
+    .widthSetter {
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      background-color: vars.$white;
+    }
+
+    .options {
+      position: absolute;
+      background-color: vars.$white;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      padding: .5em 2em .5em .5em;
+      border: 1px solid vars.$white;
+      margin: .25em 0;
+      z-index: 9999;
+
+      .option {
+        cursor: pointer;
+
+        &:hover {
+          color: vars.$primaryColor;
+        }
+      }
+    }
+  }
+}

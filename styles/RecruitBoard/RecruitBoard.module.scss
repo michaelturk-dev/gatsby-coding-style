@@ -1,0 +1,36 @@
+@use '../vars';
+@use '../mixins';
+
+.boardGrid {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.boardGridList {
+  flex: 1 1 0px;
+  h3 {
+    font-size: 1rem;
+    font-weight: vars.$font-medium-bold;
+  }
+}
+
+.boardGridListBody {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  background-color: vars.$alternateBackgroundColor;
+  padding: .8rem;
+  border-radius: 3px;
+  overflow: scroll;
+}
+
+.recruitCard {
+  border: 1px solid vars.$white;
+  border-radius: 3px;
+  &:hover {
+    border: 1px solid vars.$hoverColor;
+  }
+}

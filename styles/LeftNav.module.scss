@@ -1,0 +1,271 @@
+@use './vars';
+@use './mixins';
+
+.tradeNav {
+  background-color: vars.$alternateBackgroundColor;
+  width: 100%;
+  box-shadow: inset -15px -1px 15px 0px rgba(53, 53, 53, 0.1);
+  .sideNavContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .buttonAndSelectInputContiner {
+      width: 90%;
+      .tradeNavHeader {
+        padding: 35px 0px 15px 0px;
+        .buttonsContainer {
+          background-color: vars.$white;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 6px;
+          padding: 4px;
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+          .activeButton {
+            width: 49%;
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+            background-color: vars.$tradeschoolRed;
+            border-radius: 4px;
+            padding: 3px 5px 3px 5px;
+            color: vars.$white;
+            font-size: 14px;
+            outline: none;
+            .buttonText {
+              padding: 0px 5px 0px 5px;
+            }
+          }
+          .unActiveButton {
+            width: 49%;
+            background: vars.$white;
+            border-radius: 3px;
+            padding: 3px 5px 3px 5px;
+            color: vars.$fadedGrey;
+            font-size: 14px;
+            outline: none;
+            .buttonText {
+              padding: 0px 5px 0px 5px;
+            }
+          }
+        }
+      }
+    }
+    .selectInputContainer {
+      padding: 10px 0px 10px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 5px;
+        width: 90%;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid vars.$white;
+        border-radius: 4px;
+        background-color: vars.$white;
+        padding: 6px 6px 6px 6px;
+        .options {
+          background-color: vars.$white;
+        }
+      }
+    }
+    .conversationContainer {
+      padding: 25px 0px 25px 0px;
+      width: 100%;
+      .conversationUsersActive {
+        width: 100%;
+        background: vars.$white;
+        box-shadow: 0px 0px 15px 2px rgba(53, 53, 53, 0.2);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid vars.$tradeschoolRed;
+        cursor: pointer;
+        .activeUser {
+          width: 90%;
+          display: flex;
+          padding: 10px 0px 10px 0px;
+          .circleContainer {
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+            justify-content: center;
+            padding: 10px 0px 0px 20px;
+            .dotContainer {
+              padding: 2px;
+              background: vars.$white;
+              border-radius: 50%;
+              .orangeDot {
+                background-color: vars.$alert;
+                padding: 5px;
+                border-radius: 50%;
+              }
+              .greenDot {
+                background-color: vars.$green;
+                padding: 5px;
+                border-radius: 50%;
+              }
+              .grayDot {
+                background-color: vars.$offwhite;
+                padding: 5px;
+                border-radius: 50%;
+              }
+            }
+          }
+          .rightSide {
+            width: 76%;
+            padding: 4px 4px 4px 4px;
+            .userNameAndDate {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .heading4 {
+                color: vars.$secondaryColor;
+                font-size: 15px;
+                font-weight: 600;
+              }
+              .heading6 {
+                color: vars.$fadedGrey;
+                font-size: 12px;
+              }
+            }
+            .message {
+              .heading6 {
+                color: vars.$fadedGrey;
+                font-size: 12px;
+                white-space: nowrap;
+                width: 70%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+      .conversationUsersUnactive {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 2px;
+        cursor: pointer;
+        .activeUser {
+          width: 90%;
+          display: flex;
+          padding: 10px 0px 10px 0px;
+          border-bottom: 2px solid #ebebeb;
+          .circleContainer {
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+            justify-content: center;
+            padding: 10px 0px 0px 20px;
+            .dotContainer {
+              padding: 2px;
+              background: vars.$white;
+              border-radius: 50%;
+              .orangeDot {
+                background-color: vars.$alert;
+                padding: 5px;
+                border-radius: 50%;
+              }
+              .greenDot {
+                background-color: vars.$green;
+                padding: 5px;
+                border-radius: 50%;
+              }
+              .grayDot {
+                background-color: vars.$offwhite;
+                padding: 5px;
+                border-radius: 50%;
+              }
+            }
+          }
+          .rightSide {
+            width: 76%;
+            padding: 4px 4px 4px 4px;
+            .userNameAndDate {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .heading4 {
+                color: vars.$secondaryColor;
+                font-size: 15px;
+                white-space: nowrap;
+                width: 60%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              .heading6 {
+                color: vars.$fadedGrey;
+                font-size: 12px;
+              }
+            }
+            .message {
+              .heading6 {
+                color: vars.$fadedGrey;
+                font-size: 12px;
+                white-space: nowrap;
+                width: 70%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    padding: 24px 18px;
+    font-size: 0.7rem;
+  }
+}
+
+.tradeNavList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    padding: 18px;
+    margin: 0;
+
+    hr {
+      border-top-color: vars.$borderColor;
+    }
+  }
+}
+
+.active {
+  border-left: 3px solid vars.$tradeschoolRed;
+  background-color: vars.$white;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 0px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navItemLink {
+  text-decoration: none;
+  color: vars.$secondaryColor;
+
+  &:hover {
+    text-decoration: none;
+    color: vars.$linkBlue;
+  }
+
+  h3 {
+    font-weight: vars.$font-medium-bold;
+    font-size: 1rem;
+  }
+
+  .navItemLinkCount {
+    font-size: 0.8rem;
+    color: vars.$fadedGrey;
+  }
+}

@@ -1,0 +1,127 @@
+@use 'vars';
+@use 'mixins';
+
+.loginModal {
+  padding: 0 0 0.5rem;
+  height: unset;
+  max-width: 425px;
+  margin: auto;
+  @include mixins.breakpoint-up(md) {
+    height: 440px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 0.45rem;
+}
+
+.stepIndicatorContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.stepIndicator {
+  height: 5px;
+  width: 35px;
+  background: vars.$lightGrey;
+  border-radius: 3px;
+  margin: 0 4px;
+}
+
+.activeStep {
+  background: vars.$buttonBlue;
+}
+
+.inputContainer {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.phoneLabel {
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  background-color: vars.$outlineGrey;
+  height: 100%;
+  position: relative;
+  left: 3px;
+  height: 2.625rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: -1px 1px 4px 0 #00000033;
+}
+
+.codeForm {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.smallText {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 5px;
+  font-size: 0.75rem;
+  color: vars.$fadedGrey;
+  text-align: center;
+}
+
+.error {
+  color: vars.$error;
+  line-height: 1.2;
+  padding-top: 0.5rem;
+}
+
+.line {
+  margin: 1rem 0;
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid vars.$lightGrey;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.dividerText {
+  background: #fff;
+  color: vars.$lightGrey;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+.faceBookContainer {
+  padding-top: 0.5rem;
+}
+
+.reset {
+  padding-top: 2rem;
+  text-align: center;
+}

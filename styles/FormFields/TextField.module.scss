@@ -1,0 +1,26 @@
+@use '../vars.scss';
+
+.container {
+  width: 100%;
+  font-size: .9rem;
+  font-weight: vars.$font-medium;
+
+  label {
+    width: auto;
+    color: vars.$fadedGrey;
+  }
+
+}
+
+.input {
+  &::placeholder {
+    color: vars.$lightGrey
+  }
+}
+
+.errorMessage {
+  color: vars.$error;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  height: 0;
+}

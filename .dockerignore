@@ -1,0 +1,8 @@
+node_modules/
+*.Dockerfile
+docker-compose.yml
+README.md
+azure-pipelines.yml
+.next/
+ArmTemplates/
+charts/

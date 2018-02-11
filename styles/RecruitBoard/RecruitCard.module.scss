@@ -1,0 +1,20 @@
+@use '../vars';
+@use '../mixins';
+
+.iconRow {
+  display: flex;
+  gap: 11px;
+
+  .cardIconWrapper {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    background-color: vars.$iconBackgroundColor;
+
+    .cardIcon {
+      width: 11px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use '../vars';
+@use '../mixins';
+
+.recruitBoardPage {
+  padding: 2rem;
+  height: calc(100vh - 72px - 4rem);
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  h1 {
+    font-size: 1.8rem;
+    display: flex;
+    gap: 15px;
+
+    .addRecruitButton {
+      border-radius: 20px;
+      background-color: vars.$white;
+      color: vars.$primaryColor;
+      font-size: 2rem;
+      font-weight: vars.$font-light;
+      line-height: 1;
+      padding: 0 9.5px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

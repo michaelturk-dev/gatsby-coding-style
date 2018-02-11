@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  trade-recruiter:
+    image: trade-recruiter
+    command: ["yarn", "dev"]
+    build:
+      context: .
+      target: base
+      args:
+        NPMRC: private.npmrc
+    ports:
+      - "$PORT:$PORT"
+      - "9229:9229"
+    volumes:
+      - "./:/app/"
+    extra_hosts:
+      - "dev-api.tradeschool.com:172.17.0.1"
+      - "dev.tradeschool.com:172.17.0.1"
+  db:
+    image: mongo
+    ports:
+      - "$MONGO_PORT:27017"

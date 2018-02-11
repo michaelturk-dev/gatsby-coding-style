@@ -1,0 +1,26 @@
+@import '../vars';
+
+.container {
+  width: 225px;
+  position: relative;
+}
+
+.input {
+  height: 40px;
+  padding-left: 33px !important;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px 0 $shadowColor;
+  background-color: $white;
+  border-color: $white !important;
+
+  &::placeholder {
+    color: $lightGrey;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}

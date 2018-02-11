@@ -1,0 +1,32 @@
+@use '../vars';
+@use '../mixins';
+
+.headerLogo {
+  // width: 272px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+}
+
+.dropDown {
+  transform: translate(-40%);
+  @include mixins.breakpoint-up(md) {
+    transform: translate(-35%);
+  }
+}
+
+.link {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: vars.$secondaryColor;
+  font-weight: 600;
+  font-size: 0.9rem;
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,59 @@
+@import './../vars';
+
+.container {
+  height: calc(100vh - 72px);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messages {
+  overflow-y: scroll;
+  padding: 24px 40px;
+  flex-basis: 100%;
+}
+
+.messagesSeperator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  p {
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $tradeschoolRed;
+    border-radius: 6px;
+    padding: 8px 8px 7px;
+    border: 1px solid $tradeschoolRed;
+    background-color: $white;
+    margin: 0;
+    width: 110px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: calc(50% - 55px);
+      left: 0;
+      top: 50%;
+      background-color: $tradeschoolRed;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: calc(50% - 55px);
+      right: 0;
+      top: 50%;
+      background-color: $tradeschoolRed;
+    }
+  }
+}

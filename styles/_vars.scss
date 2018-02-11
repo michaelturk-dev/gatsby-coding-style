@@ -1,0 +1,41 @@
+$white: #ffffff;
+$alternateBackgroundColor: #f9f9f9;
+/* Colours */
+$primaryColor: #1d77c0;
+$verifiedBlue: #2196f3;
+$secondaryColor: #333333;
+$borderColor: #c7d5d8;
+$linkBlue: #1673be;
+$fadedGrey: #666;
+$tradeschoolRed: #d32525;
+$alert: #ff9701;
+$offwhite: #dcdcdc;
+$error: #cc0000;
+$buttonBlue: #104f81;
+$lightGrey: #aaa;
+$outlineGrey: #ccc;
+$green: #558b29;
+$hoverColor: #c1daee;
+$iconBackgroundColor: #ecf5ff;
+$shadowColor: rgba(0, 0, 0, 0.15);
+
+/* Fonts */
+$baseFont: 'Avenir Next';
+$font-sans-serif: 'Avenir Next';
+$font-serif: Georgia, Times, serif;
+$font-mono: Menlo, Courier, monospace;
+$font-light: 200;
+$font-normal: normal;
+$font-medium: 500;
+$font-medium-bold: 600;
+$font-bold: bold;
+$font-heavy: 900;
+
+$grid-breakpoints: (
+  xs: 0,
+  mobile: 450px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);

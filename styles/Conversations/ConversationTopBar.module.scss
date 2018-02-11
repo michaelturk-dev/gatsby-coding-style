@@ -1,0 +1,32 @@
+@import './../vars';
+
+.topBar {
+  display: flex;
+  padding: 24px 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topBarLeft {
+  h2 {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    color: $lightGrey;
+    margin: 0;
+  }
+}
+
+.topBarRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  & > * + * {
+    margin-left: 24px;
+  }
+}

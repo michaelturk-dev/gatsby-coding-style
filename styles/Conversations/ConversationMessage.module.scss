@@ -1,0 +1,35 @@
+@import './../vars';
+
+.message {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 42px;
+}
+
+.text {
+  margin-left: 11px;
+  flex-basis: 100%;
+  color: $secondaryColor;
+
+  h6 {
+    font-size: 16px;
+    font-weight: 900;
+  }
+}
+
+.content {
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  p {
+    margin-bottom: 7px;
+  }
+}

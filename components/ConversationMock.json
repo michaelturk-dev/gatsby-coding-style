@@ -1,0 +1,74 @@
+[
+    {
+      "conversationId": "5fddea099c26cfe05ac2e8d2",
+      "isActive": true,
+      "picture": "https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png",
+      "name": "Cecile Richmond",
+      "time":"1:00",
+      "message":" Est, vitae! Recusandae dolore aliquam, mollitia eius unde dolorem",
+      "userConversationBox":true,
+      "recruiterMessage":"Score 5"
+    },
+    {
+      "conversationId": "5fddea09bddda0b7191cad5d",
+      "isActive": true,
+      "picture": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "name": "Rowe Cunningham",
+      "time":"2:00",
+      "message":"I would to talk about some task...",
+      "userConversationBox":false,
+      "recruiterMessage":"Score 6"
+    },
+    {
+      "conversationId": "5fddea0944b8cc30de158bbc",
+      "isActive": false,
+      "picture": "https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png",
+      "name": "Curtis Garza",
+      "time":"2:20",
+      "message":"Voluptatibus a, sequi ut modi odit ea molestias est sed harum perspiciatis. ",
+      "userConversationBox":false,
+      "recruiterMessage":"Score 7"
+    },
+    {
+      "conversationId": "5fddea0915a2d6f0f0a35f93",
+      "isActive": false,
+      "picture": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "name": "Molly Simmons",
+      "time":"1:30",
+      "message":"Modi rem accusantium eos illo velit nulla.",
+      "userConversationBox":false,
+      "recruiterMessage":"Score 8"
+    },
+    {
+      "conversationId": "5fddea090e01b30521395fc7",
+      "isActive": false,
+      "picture": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "name": "Duncan Travis",
+      "time":"3:00",
+      "message":" Est, vitae! Recusandae dolore aliquam, mollitia eius unde dolorem",
+      "userConversationBox":false,
+      "recruiterMessage":"Score 5"
+    },
+    {
+      "conversationId": "5fddea09b9fd73c4dedd0044",
+      "isActive": true,
+      "picture": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "name": "Bowman Roach",
+      "time":"1:00",
+      "message":"Voluptatibus a, sequi ut modi odit ea molestias est sed harum perspiciatis. ",
+      "userConversationBox":false,
+      "recruiterMessage":"Score 5"
+    },
+    {
+      "conversationId": "5fddea097acca7a863085ffb",
+      "isActive": false,
+      "picture": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "name": "Margret Delacruz",
+      "time":"1:00",
+      "message":"I would to talk about some task...",
+      "userConversationBox":false,
+      "recruiterMessage":"Score 7"
+    }
+  ]
+
+

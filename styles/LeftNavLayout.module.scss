@@ -1,0 +1,11 @@
+.leftNavLayoutGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 8fr;
+  height: calc(100vh - 72px);
+}
+
+.leftSideNav {
+  height: 100%;
+  overflow: scroll;
+}
